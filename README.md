@@ -26,8 +26,8 @@ https://github.com/nihui/opencv-mobile
 * Open this project with Android Studio, build it and enjoy!
 
 ### screenshot
-!()[face.png]
-!()[cpu.png]
+![](face.png)
+![](cpu.png)
 
 ## reference
 https://github.com/nihui/ncnn-android-mobilenetssd
