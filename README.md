@@ -31,6 +31,8 @@ https://github.com/nihui/opencv-mobile
 
 ## reference
 https://github.com/nihui/ncnn-android-mobilenetssd
+
 https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB
+
 https://github.com/deepinsight/insightface
 
