@@ -192,7 +192,13 @@ JNIEXPORT jboolean JNICALL Java_com_tencent_ncnnyolov7_NcnnYolov7_loadModel(JNIE
         }
         else
         {
-            if (!g_yolo)
+            /*
+            这里每次从CPU切换到GPU时，程序会崩溃。
+            不知道什么原因导致的。只能再每次加载模型时，重新释放并再分配内存。
+            这样模型在CPU切换到GPU运行时，程序不会崩溃。
+            */
+            delete g_yolo; 
+            // if (!g_yolo)
                 g_yolo = new SSD;
             g_yolo->load(mgr, modeltype, target_size, norm_vals[(int)modelid], use_gpu);
         }
